@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:realest_app/src/features/controller/tabs_category_controller.dart';
-import 'package:realest_app/src/features/models/property_model.dart';
 import 'package:realest_app/src/features/screens/home/widget/category_property_cards.dart';
 import 'package:realest_app/src/features/screens/home/widget/c_t_aand_search.dart';
 import 'package:realest_app/src/features/screens/home/widget/category_tabs.dart';
