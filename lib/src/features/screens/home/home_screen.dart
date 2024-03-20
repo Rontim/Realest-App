@@ -67,10 +67,11 @@ class Home extends StatelessWidget {
               ),
               Obx(
                 () => SizedBox(
-                  height: 300.0,
+                  height: MediaQuery.of(context).size.height * 0.4,
                   child: ListView.builder(
                     itemCount: properties.length,
                     scrollDirection: Axis.vertical,
+                    physics: const NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     itemBuilder: (context, index) => ListTile(
                       title: Text(properties[index].name),
@@ -90,7 +91,7 @@ class Home extends StatelessWidget {
                             ),
                           ),
                           Text(
-                            'per month',
+                            properties[index].rating.toString(),
                             style: textTheme.displayLarge?.copyWith(
                               fontSize: 16.0,
                             ),
