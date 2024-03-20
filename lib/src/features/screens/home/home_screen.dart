@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:realest_app/src/features/controller/tabs_category_controller.dart';
+import 'package:realest_app/src/features/screens/details/property_detail_screen.dart';
 import 'package:realest_app/src/features/screens/home/widget/category_property_cards.dart';
 import 'package:realest_app/src/features/screens/home/widget/c_t_aand_search.dart';
 import 'package:realest_app/src/features/screens/home/widget/category_tabs.dart';
@@ -73,30 +74,39 @@ class Home extends StatelessWidget {
                     scrollDirection: Axis.vertical,
                     physics: const NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
-                    itemBuilder: (context, index) => ListTile(
-                      title: Text(properties[index].name),
-                      subtitle: Text(properties[index].location),
-                      leading: CircleAvatar(
-                        backgroundImage: AssetImage(properties[index].thumbnail),
-                        radius: 40.0,
-                      ),
-                      trailing: Column(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text(
-                            '\$${properties[index].price}',
-                            style: textTheme.displayLarge?.copyWith(
-                              fontWeight: FontWeight.bold,
-                              fontSize: 24.0,
-                            ),
+                    itemBuilder: (context, index) => GestureDetector(
+                      onTap: () {
+                        Get.to(
+                          () => PropertyDetailScreen(
+                            propertyId: properties[index].id,
                           ),
-                          Text(
-                            properties[index].rating.toString(),
-                            style: textTheme.displayLarge?.copyWith(
-                              fontSize: 16.0,
+                        );
+                      },
+                      child: ListTile(
+                        title: Text(properties[index].name),
+                        subtitle: Text(properties[index].location),
+                        leading: CircleAvatar(
+                          backgroundImage: AssetImage(properties[index].thumbnail),
+                          radius: 40.0,
+                        ),
+                        trailing: Column(
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Text(
+                              '\$${properties[index].price}',
+                              style: textTheme.displayLarge?.copyWith(
+                                fontWeight: FontWeight.bold,
+                                fontSize: 24.0,
+                              ),
                             ),
-                          ),
-                        ],
+                            Text(
+                              properties[index].rating.toString(),
+                              style: textTheme.displayLarge?.copyWith(
+                                fontSize: 16.0,
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
                     ),
                   ),

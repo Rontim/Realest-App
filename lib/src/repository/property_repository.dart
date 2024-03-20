@@ -34,4 +34,12 @@ class PropertyRepository extends GetxController {
   List<PropertyModel> getPropertiesByPriceRange(double min, double max) {
     return properties.where((property) => property.price >= min && property.price <= max).toList();
   }
+
+  Future<PropertyModel> getPropertyById(String id) async {
+    Duration duration = const Duration(seconds: 2);
+
+    return Future.delayed(duration, () {
+      return properties.firstWhere((property) => property.id == id);
+    });
+  }
 }
