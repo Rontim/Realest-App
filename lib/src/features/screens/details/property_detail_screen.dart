@@ -17,9 +17,6 @@ class PropertyDetailScreen extends StatelessWidget {
     late PropertyModel property;
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Property Detail'),
-      ),
       body: FutureBuilder<PropertyModel>(
         future: propertycontroller.getPropertyById(propertyId!),
         builder: (context, snapshot) {
@@ -37,114 +34,69 @@ class PropertyDetailScreen extends StatelessWidget {
 
           property = snapshot.data!;
 
-          return Stack(children: [
-            Container(
-              height: MediaQuery.of(context).size.height * 0.4,
-              width: double.infinity,
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage(property.thumbnail),
-                  fit: BoxFit.cover,
-                ),
-              ),
-            ),
-            Positioned(
-              top: 20,
-              left: 20,
-              child: Container(
-                padding: const EdgeInsets.all(10),
+          return Stack(
+            children: [
+              Container(
+                height: MediaQuery.of(context).size.height * 0.48,
+                width: double.infinity,
                 decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.5),
-                  borderRadius: BorderRadius.circular(20),
+                  image: DecorationImage(
+                    image: AssetImage(property.thumbnail),
+                    fit: BoxFit.cover,
+                  ),
                 ),
-                child: Text(
-                  '\$${property.price}',
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 20,
+                foregroundDecoration: BoxDecoration(
+                    // gradient: []
+                    ),
+              ),
+              Positioned(
+                top: 24,
+                left: 20,
+                child: GestureDetector(
+                  onTap: () => Get.back(),
+                  child: Container(
+                    padding: const EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(
+                      Icons.arrow_back,
+                      color: Colors.white,
+                    ),
                   ),
                 ),
               ),
-            ),
-            Positioned(
-              top: 20,
-              right: 20,
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.5),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.star,
-                      color: Colors.yellow,
-                    ),
-                    Text(
-                      '${property.rating}',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
+              Positioned(
+                top: 24,
+                right: 20,
+                child: Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.more_horiz_outlined,
+                    color: Colors.white,
+                  ),
                 ),
               ),
-            ),
-            Positioned(
-              top: 20,
-              right: 20,
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.5),
-                  borderRadius: BorderRadius.circular(20),
+              Positioned(
+                bottom: 0,
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.7,
+                  width: MediaQuery.of(context).size.width,
+                  decoration: const BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(20), topRight: Radius.circular(20)),
+                  ),
+                  child: Text(property.name),
                 ),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.star,
-                      color: Colors.yellow,
-                    ),
-                    Text(
-                      '${property.rating}',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ),
-            Positioned(
-              top: 20,
-              right: 20,
-              child: Container(
-                padding: const EdgeInsets.all(10),
-                decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.5),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: Row(
-                  children: [
-                    const Icon(
-                      Icons.star,
-                      color: Colors.yellow,
-                    ),
-                    Text(
-                      '${property.rating}',
-                      style: const TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            )
-          ]);
+              )
+            ],
+          );
         },
       ),
     );

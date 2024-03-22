@@ -68,7 +68,6 @@ class Home extends StatelessWidget {
               ),
               Obx(
                 () => SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.4,
                   child: ListView.builder(
                     itemCount: properties.length,
                     scrollDirection: Axis.vertical,
