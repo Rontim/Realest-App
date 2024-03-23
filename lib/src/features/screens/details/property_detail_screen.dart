@@ -36,18 +36,23 @@ class PropertyDetailScreen extends StatelessWidget {
 
           return Stack(
             children: [
-              Container(
-                height: MediaQuery.of(context).size.height * 0.48,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                  image: DecorationImage(
-                    image: AssetImage(property.thumbnail),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                foregroundDecoration: BoxDecoration(
-                    // gradient: []
+              Positioned(
+                top: 0,
+                right: 0,
+                left: 0,
+                child: Container(
+                  height: MediaQuery.of(context).size.height * 0.48,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(property.thumbnail),
+                      fit: BoxFit.cover,
                     ),
+                  ),
+                  foregroundDecoration: BoxDecoration(
+                      // gradient: []
+                      ),
+                ),
               ),
               Positioned(
                 top: 24,
@@ -85,14 +90,47 @@ class PropertyDetailScreen extends StatelessWidget {
               Positioned(
                 bottom: 0,
                 child: Container(
-                  height: MediaQuery.of(context).size.height * 0.7,
+                  height: MediaQuery.of(context).size.height * 0.6,
                   width: MediaQuery.of(context).size.width,
+                  padding: const EdgeInsets.all(20),
                   decoration: const BoxDecoration(
-                    color: Colors.blue,
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(20), topRight: Radius.circular(20)),
+                        topLeft: Radius.circular(50), topRight: Radius.circular(50)),
                   ),
-                  child: Text(property.name),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  property.name,
+                                  style: Theme.of(context)
+                                      .textTheme
+                                      .displayLarge
+                                      ?.copyWith(fontSize: 24, fontWeight: FontWeight.bold),
+                                ),
+                                Text(
+                                  property.location,
+                                  style: Theme.of(context).textTheme.displayLarge?.copyWith(
+                                        fontSize: 16,
+                                        fontWeight: FontWeight.bold,
+                                        color: const Color(0xFF808080),
+                                      ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 20),
+                    ],
+                  ),
                 ),
               )
             ],
