@@ -22,3 +22,9 @@ const List<String> kHomeTabs = [
   'Mansions',
   'Manors',
 ];
+
+/* --Property Deatails Text Strings-- */
+const String kPropertyDetails = 'Property Details';
+const String kPropertyDescription = 'Description';
+const String kPropertyDescriptionReadMore = 'Read More';
+const String kPropertyDescriptionReadLess = 'Read Less';

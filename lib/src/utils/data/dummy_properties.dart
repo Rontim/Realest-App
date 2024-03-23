@@ -8,6 +8,7 @@ List<PropertyModel> dummyProperties = [
     price: 200.0,
     thumbnail: 'assets/images/thumbnails/luxurysuites.jpg',
     rating: 4.7,
+    reviews: 1400,
     description: 'Luxury suites with a breathtaking view of the city center.',
     category: 'Hotel',
     images: [
@@ -23,6 +24,7 @@ List<PropertyModel> dummyProperties = [
     price: 300.0,
     thumbnail: 'assets/images/thumbnails/seasideresort.jpg',
     rating: 4.9,
+    reviews: 1800,
     description: 'Experience the ultimate relaxation in our seaside resort.',
     category: 'Hotel',
     images: [
@@ -38,6 +40,7 @@ List<PropertyModel> dummyProperties = [
     price: 180.0,
     thumbnail: 'assets/images/thumbnails/mountainretreat.jpg',
     rating: 4.6,
+    reviews: 1200,
     description: 'Escape to our mountain retreat for a serene getaway.',
     category: 'Hotel',
     images: [
@@ -53,6 +56,7 @@ List<PropertyModel> dummyProperties = [
     price: 250.0,
     thumbnail: 'assets/images/thumbnails/urbanoasis.jpg',
     rating: 4.8,
+    reviews: 1600,
     description: 'Discover an urban oasis amidst the bustling city life.',
     category: 'Hotel',
     images: [
@@ -68,6 +72,7 @@ List<PropertyModel> dummyProperties = [
     price: 220.0,
     thumbnail: 'assets/images/thumbnails/riversideretreat.jpg',
     rating: 4.7,
+    reviews: 1500,
     description: 'Relax by the riverside in our tranquil retreat.',
     category: 'Hotel',
     images: [
@@ -83,6 +88,7 @@ List<PropertyModel> dummyProperties = [
     price: 1200.0,
     thumbnail: 'assets/images/thumbnails/cityviewapartments.jpg',
     rating: 4.5,
+    reviews: 3000,
     description: 'Modern apartments with stunning views of the city skyline.',
     category: 'Apartments',
     images: [
@@ -98,6 +104,7 @@ List<PropertyModel> dummyProperties = [
     price: 1500.0,
     thumbnail: 'assets/images/thumbnails/lakefrontresidence.jpg',
     rating: 4.8,
+    reviews: 3200,
     description: 'Elegant residences overlooking a tranquil lake.',
     category: 'Apartments',
     images: [
@@ -113,6 +120,7 @@ List<PropertyModel> dummyProperties = [
     price: 900.0,
     thumbnail: 'assets/images/thumbnails/cozy_loft.jpg',
     rating: 4.2,
+    reviews: 2500,
     description: 'Charming loft apartments in the heart of the city.',
     category: 'Apartments',
     images: [
@@ -128,6 +136,7 @@ List<PropertyModel> dummyProperties = [
     price: 1100.0,
     thumbnail: 'assets/images/thumbnails/garden_view_apartments.jpg',
     rating: 4.6,
+    reviews: 2800,
     description: 'Spacious apartments with picturesque garden views.',
     category: 'Apartments',
     images: [
@@ -143,6 +152,7 @@ List<PropertyModel> dummyProperties = [
     price: 3000.0,
     thumbnail: 'assets/images/thumbnails/penthouse_suite.jpg',
     rating: 4.9,
+    reviews: 3500,
     description: 'Exclusive penthouse suites offering unparalleled luxury.',
     category: 'Apartments',
     images: [
@@ -158,6 +168,7 @@ List<PropertyModel> dummyProperties = [
     price: 1800.0,
     thumbnail: 'assets/condo_thumbnail1.jpg',
     rating: 4.7,
+    reviews: 2000,
     description: 'Luxurious condos with panoramic views of the city skyline.',
     category: 'Condos',
     images: [
@@ -173,6 +184,7 @@ List<PropertyModel> dummyProperties = [
     price: 2500.0,
     thumbnail: 'assets/condo_thumbnail2.jpg',
     rating: 4.9,
+    reviews: 2400,
     description: 'Exclusive condos nestled along the pristine coastline.',
     category: 'Condos',
     images: [
@@ -188,6 +200,7 @@ List<PropertyModel> dummyProperties = [
     price: 2000.0,
     thumbnail: 'assets/condo_thumbnail3.jpg',
     rating: 4.8,
+    reviews: 4000,
     description: 'Elegant condos with serene views of the riverwalk.',
     category: 'Condos',
     images: [
@@ -203,6 +216,7 @@ List<PropertyModel> dummyProperties = [
     price: 2200.0,
     thumbnail: 'assets/condo_thumbnail4.jpg',
     rating: 4.6,
+    reviews: 2800,
     description: 'Chic lofts in the heart of the bustling downtown district.',
     category: 'Condos',
     images: [
@@ -218,6 +232,7 @@ List<PropertyModel> dummyProperties = [
     price: 1900.0,
     thumbnail: 'assets/condo_thumbnail5.jpg',
     rating: 4.5,
+    reviews: 3200,
     description: 'Tranquil condos surrounded by lush green gardens.',
     category: 'Condos',
     images: [
@@ -233,6 +248,7 @@ List<PropertyModel> dummyProperties = [
     price: 3500.0,
     thumbnail: 'assets/images/thumbnails/paradise_island_resort.jpg',
     rating: 4.9,
+    reviews: 4000,
     description: 'Experience luxury and serenity on our private island resort.',
     category: 'Resorts',
     images: [
@@ -248,6 +264,7 @@ List<PropertyModel> dummyProperties = [
     price: 2800.0,
     thumbnail: 'assets/images/thumbnails/mountain_retreat_resort.jpg',
     rating: 4.8,
+    reviews: 1900,
     description: 'Unwind amidst the breathtaking beauty of the mountains.',
     category: 'Resorts',
     images: [
@@ -263,6 +280,7 @@ List<PropertyModel> dummyProperties = [
     price: 3200.0,
     thumbnail: 'assets/images/thumbnails/safari_lodge_resort.jpg',
     rating: 4.7,
+    reviews: 2200,
     description: 'Embark on an unforgettable safari adventure at our lodge.',
     category: 'Resorts',
     images: [
@@ -278,6 +296,7 @@ List<PropertyModel> dummyProperties = [
     price: 3800.0,
     thumbnail: 'assets/images/thumbnails/beachfront_resort_&_spa.jpg',
     rating: 4.9,
+    reviews: 2500,
     description: 'Indulge in luxury and relaxation at our beachfront retreat.',
     category: 'Resorts',
     images: [
@@ -293,6 +312,7 @@ List<PropertyModel> dummyProperties = [
     price: 3000.0,
     thumbnail: 'assets/images/thumbnails/desert_oasis_resort.jpg',
     rating: 4.6,
+    reviews: 2100,
     description: 'Discover an oasis of tranquility amidst the desert landscape.',
     category: 'Resorts',
     images: [
@@ -308,6 +328,7 @@ List<PropertyModel> dummyProperties = [
     price: 2800.0,
     thumbnail: 'assets/villa_thumbnail1.jpg',
     rating: 4.7,
+    reviews: 3000,
     description: 'Escape to our luxurious seaside villa retreat.',
     category: 'Villas',
     images: [
@@ -323,6 +344,7 @@ List<PropertyModel> dummyProperties = [
     price: 3200.0,
     thumbnail: 'assets/villa_thumbnail2.jpg',
     rating: 4.8,
+    reviews: 2345,
     description: 'Unwind in our elegant villas with panoramic mountain views.',
     category: 'Villas',
     images: [
@@ -338,6 +360,7 @@ List<PropertyModel> dummyProperties = [
     price: 3500.0,
     thumbnail: 'assets/villa_thumbnail3.jpg',
     rating: 4.9,
+    reviews: 28000,
     description: 'Discover luxury and tranquility in our tropical paradise villas.',
     category: 'Villas',
     images: [
@@ -353,6 +376,7 @@ List<PropertyModel> dummyProperties = [
     price: 3000.0,
     thumbnail: 'assets/villa_thumbnail4.jpg',
     rating: 4.6,
+    reviews: 32000,
     description: 'Experience lakeside living in our exclusive villa community.',
     category: 'Villas',
     images: [
@@ -368,6 +392,7 @@ List<PropertyModel> dummyProperties = [
     price: 3800.0,
     thumbnail: 'assets/villa_thumbnail5.jpg',
     rating: 4.7,
+    reviews: 35000,
     description: 'Indulge in opulence surrounded by scenic vineyards.',
     category: 'Villas',
     images: [
@@ -383,6 +408,7 @@ List<PropertyModel> dummyProperties = [
     price: 1500.0,
     thumbnail: 'assets/cottage_thumbnail1.jpg',
     rating: 4.5,
+    reviews: 26790,
     description: 'Cozy cottage nestled along the tranquil riverside.',
     category: 'Cottages',
     images: [
@@ -398,6 +424,7 @@ List<PropertyModel> dummyProperties = [
     price: 1200.0,
     thumbnail: 'assets/cottage_thumbnail2.jpg',
     rating: 4.8,
+    reviews: 29000,
     description: 'Escape to our secluded cottage in the heart of the forest.',
     category: 'Cottages',
     images: [
@@ -413,6 +440,7 @@ List<PropertyModel> dummyProperties = [
     price: 1700.0,
     thumbnail: 'assets/cottage_thumbnail3.jpg',
     rating: 4.6,
+    reviews: 31000,
     description: 'Tranquil cottage retreat with stunning lake views.',
     category: 'Cottages',
     images: [
@@ -428,6 +456,7 @@ List<PropertyModel> dummyProperties = [
     price: 1800.0,
     thumbnail: 'assets/cottage_thumbnail4.jpg',
     rating: 4.7,
+    reviews: 28000,
     description: 'Charming cottage steps away from the sandy shoreline.',
     category: 'Cottages',
     images: [
@@ -443,6 +472,7 @@ List<PropertyModel> dummyProperties = [
     price: 1600.0,
     thumbnail: 'assets/cottage_thumbnail5.jpg',
     rating: 4.9,
+    reviews: 33000,
     description: 'Cozy cottage retreat nestled amidst scenic mountain vistas.',
     category: 'Cottages',
     images: [
@@ -458,6 +488,7 @@ List<PropertyModel> dummyProperties = [
     price: 2000.0,
     thumbnail: 'assets/bungalow_thumbnail1.jpg',
     rating: 4.7,
+    reviews: 12000,
     description: 'Escape to our serene seaside bungalow retreat.',
     category: 'Bungalows',
     images: [
@@ -473,6 +504,7 @@ List<PropertyModel> dummyProperties = [
     price: 1800.0,
     thumbnail: 'assets/bungalow_thumbnail2.jpg',
     rating: 4.8,
+    reviews: 15000,
     description: 'Discover paradise in our tropical bungalow haven.',
     category: 'Bungalows',
     images: [
@@ -488,6 +520,7 @@ List<PropertyModel> dummyProperties = [
     price: 1500.0,
     thumbnail: 'assets/bungalow_thumbnail3.jpg',
     rating: 4.6,
+    reviews: 18000,
     description: 'Find peace and tranquility in our forest retreat bungalow.',
     category: 'Bungalows',
     images: [
@@ -503,6 +536,7 @@ List<PropertyModel> dummyProperties = [
     price: 2200.0,
     thumbnail: 'assets/bungalow_thumbnail4.jpg',
     rating: 4.9,
+    reviews: 20000,
     description: 'Relax by the riverside in our luxurious bungalow escape.',
     category: 'Bungalows',
     images: [
@@ -518,6 +552,7 @@ List<PropertyModel> dummyProperties = [
     price: 1900.0,
     thumbnail: 'assets/bungalow_thumbnail5.jpg',
     rating: 4.7,
+    reviews: 22000,
     description: 'Enjoy stunning mountain views from our cozy bungalow.',
     category: 'Bungalows',
     images: [
@@ -533,6 +568,7 @@ List<PropertyModel> dummyProperties = [
     price: 10000.0,
     thumbnail: 'assets/mansion_thumbnail1.jpg',
     rating: 4.9,
+    reviews: 5000,
     description: 'Indulge in opulent living in our luxury estate mansion.',
     category: 'Mansions',
     images: [
@@ -548,6 +584,7 @@ List<PropertyModel> dummyProperties = [
     price: 12000.0,
     thumbnail: 'assets/mansion_thumbnail2.jpg',
     rating: 4.8,
+    reviews: 4500,
     description: 'Experience grandeur and tranquility in our seaside mansion retreat.',
     category: 'Mansions',
     images: [
@@ -563,6 +600,7 @@ List<PropertyModel> dummyProperties = [
     price: 15000.0,
     thumbnail: 'assets/mansion_thumbnail3.jpg',
     rating: 4.9,
+    reviews: 4800,
     description: 'Elevate your lifestyle in our hilltop mansion estate.',
     category: 'Mansions',
     images: [
@@ -578,6 +616,7 @@ List<PropertyModel> dummyProperties = [
     price: 11000.0,
     thumbnail: 'assets/mansion_thumbnail4.jpg',
     rating: 4.7,
+    reviews: 4200,
     description: 'Live in luxury by the riverside in our manor mansion.',
     category: 'Mansions',
     images: [
@@ -593,6 +632,7 @@ List<PropertyModel> dummyProperties = [
     price: 13000.0,
     thumbnail: 'assets/mansion_thumbnail5.jpg',
     rating: 4.8,
+    reviews: 4000,
     description: 'Experience sophistication in our elegant vineyard mansion.',
     category: 'Mansions',
     images: [
@@ -608,6 +648,7 @@ List<PropertyModel> dummyProperties = [
     price: 3500.0,
     thumbnail: 'assets/manor_thumbnail1.jpg',
     rating: 4.7,
+    reviews: 3000,
     description: 'Elegant manor with stunning views of the riverbank.',
     category: 'Manors',
     images: [
@@ -623,6 +664,7 @@ List<PropertyModel> dummyProperties = [
     price: 4000.0,
     thumbnail: 'assets/manor_thumbnail2.jpg',
     rating: 4.8,
+    reviews: 3500,
     description: 'Majestic manor estate overlooking a serene lake.',
     category: 'Manors',
     images: [
@@ -638,6 +680,7 @@ List<PropertyModel> dummyProperties = [
     price: 3000.0,
     thumbnail: 'assets/manor_thumbnail3.jpg',
     rating: 4.6,
+    reviews: 3200,
     description: 'Tranquil manor retreat nestled atop scenic hills.',
     category: 'Manors',
     images: [
@@ -653,6 +696,7 @@ List<PropertyModel> dummyProperties = [
     price: 4500.0,
     thumbnail: 'assets/manor_thumbnail4.jpg',
     rating: 4.9,
+    reviews: 3800,
     description: 'Exquisite manor surrounded by lush botanical gardens.',
     category: 'Manors',
     images: [
@@ -668,6 +712,7 @@ List<PropertyModel> dummyProperties = [
     price: 3800.0,
     thumbnail: 'assets/manor_thumbnail5.jpg',
     rating: 4.7,
+    reviews: 3400,
     description: 'Stately manor estate overlooking the tranquil coastline.',
     category: 'Manors',
     images: [
