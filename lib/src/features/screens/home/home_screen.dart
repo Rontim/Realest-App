@@ -82,26 +82,44 @@ class Home extends StatelessWidget {
                         );
                       },
                       child: ListTile(
-                        title: Text(properties[index].name),
-                        subtitle: Text(properties[index].location),
-                        leading: CircleAvatar(
-                          backgroundImage: AssetImage(properties[index].thumbnail),
-                          radius: 40.0,
+                        title: Text(
+                          properties[index].name,
+                          style: textTheme.bodyMedium?.copyWith(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16.0,
+                          ),
+                        ),
+                        subtitle: Text(
+                          properties[index].location,
+                          style: textTheme.bodyMedium?.copyWith(
+                            color: const Color(0x00000000).withOpacity(0.5),
+                            fontSize: 16.0,
+                          ),
+                        ),
+                        leading: Container(
+                          height: MediaQuery.of(context).size.height * 0.2,
+                          width: MediaQuery.of(context).size.width * 0.2,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(properties[index].thumbnail), fit: BoxFit.fill),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
                         ),
                         trailing: Column(
                           crossAxisAlignment: CrossAxisAlignment.end,
                           children: [
                             Text(
                               '\$${properties[index].price}',
-                              style: textTheme.displayLarge?.copyWith(
+                              style: textTheme.bodyMedium?.copyWith(
                                 fontWeight: FontWeight.bold,
-                                fontSize: 24.0,
+                                fontSize: 16.0,
                               ),
                             ),
                             Text(
                               properties[index].rating.toString(),
-                              style: textTheme.displayLarge?.copyWith(
+                              style: textTheme.bodyMedium?.copyWith(
                                 fontSize: 16.0,
+                                color: Colors.black.withOpacity(0.5),
                               ),
                             ),
                           ],

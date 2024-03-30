@@ -102,7 +102,7 @@ List<PropertyModel> dummyProperties = [
     name: 'Lakefront Residence',
     location: 'Lakeside',
     price: 1500.0,
-    thumbnail: 'assets/images/thumbnails/lakefrontresidence.jpg',
+    thumbnail: 'assets/images/thumbnails/lakefront_residence.jpg',
     rating: 4.8,
     reviews: 3200,
     description: 'Elegant residences overlooking a tranquil lake.',

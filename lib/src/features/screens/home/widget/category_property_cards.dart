@@ -62,9 +62,13 @@ class CategoryPropertyCards extends StatelessWidget {
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
-                                Text(
-                                  tabcontroller.properties[index].name,
-                                  style: const TextStyle(color: tPrimaryColor, fontSize: 16),
+                                SizedBox(
+                                  width: MediaQuery.of(context).size.width * 0.35,
+                                  child: Text(
+                                    tabcontroller.properties[index].name,
+                                    maxLines: 1,
+                                    style: const TextStyle(color: tPrimaryColor, fontSize: 16),
+                                  ),
                                 ),
                                 Text(
                                   '\$${tabcontroller.properties[index].price}',
