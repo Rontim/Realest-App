@@ -1,3 +1,4 @@
+import 'package:realest_app/src/constants/property_images_string.dart';
 import 'package:realest_app/src/features/models/property_model.dart';
 
 List<PropertyModel> dummyProperties = [
@@ -11,11 +12,7 @@ List<PropertyModel> dummyProperties = [
     reviews: 1400,
     description: 'Luxury suites with a breathtaking view of the city center.',
     category: 'Hotel',
-    images: [
-      'assets/hotel_image1.jpg',
-      'assets/hotel_image2.jpg',
-      'assets/hotel_image3.jpg',
-    ],
+    images: kProperty1.toList(),
   ),
   PropertyModel(
     id: '2',

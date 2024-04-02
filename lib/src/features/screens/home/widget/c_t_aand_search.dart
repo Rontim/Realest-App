@@ -1,6 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:realest_app/src/constants/icon_strings.dart';
 import 'package:realest_app/src/constants/text_strings.dart';
+import 'package:realest_app/src/features/screens/swipe/property_swipe_screen.dart';
 
 class CTAandSearch extends StatelessWidget {
   const CTAandSearch({
@@ -30,53 +33,59 @@ class CTAandSearch extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          Container(
-              height: 58.0,
-              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                color: const Color(0xFFEFEFEF),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SizedBox(
-                    width: 200,
-                    child: Row(
-                      children: [
-                        const ImageIcon(
-                          AssetImage(ksearchIcon),
-                          size: 20,
-                        ),
-                        const SizedBox(
-                          width: 20,
-                        ),
-                        Text(
-                          kHomeSearch,
-                          style: textTheme.bodySmall?.copyWith(
-                            color: Colors.black.withOpacity(0.5),
-                            fontSize: 16.0,
+          GestureDetector(
+            onTap: () => Get.to(
+              () => PropertySwipeScreen(),
+              transition: Transition.leftToRightWithFade,
+            ),
+            child: Container(
+                height: 58.0,
+                padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 15),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: const Color(0xFFEFEFEF),
+                ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SizedBox(
+                      width: 200,
+                      child: Row(
+                        children: [
+                          const ImageIcon(
+                            AssetImage(ksearchIcon),
+                            size: 20,
                           ),
-                        )
-                      ],
+                          const SizedBox(
+                            width: 20,
+                          ),
+                          Text(
+                            kHomeSearch,
+                            style: textTheme.bodySmall?.copyWith(
+                              color: Colors.black.withOpacity(0.5),
+                              fontSize: 16.0,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
-                  ),
-                  Container(
-                    width: 50,
-                    height: 50,
-                    padding: const EdgeInsets.all(5),
-                    margin: const EdgeInsets.only(left: 20),
-                    decoration: const BoxDecoration(
-                      color: Colors.white,
-                      shape: BoxShape.circle,
+                    Container(
+                      width: 50,
+                      height: 50,
+                      padding: const EdgeInsets.all(5),
+                      margin: const EdgeInsets.only(left: 20),
+                      decoration: const BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                      ),
+                      child: const ImageIcon(
+                        AssetImage(kfilterIcon),
+                        size: 20,
+                      ),
                     ),
-                    child: const ImageIcon(
-                      AssetImage(kfilterIcon),
-                      size: 20,
-                    ),
-                  ),
-                ],
-              ))
+                  ],
+                )),
+          )
         ],
       ),
     );
