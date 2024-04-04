@@ -273,7 +273,7 @@ class PropertyDetailScreen extends StatelessWidget {
                         child: ElevatedButton(
                           onPressed: () {},
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Colors.blueAccent,
+                            backgroundColor: const Color(0xFF5177FF),
                           ),
                           child: Text(
                             'Book Now',
